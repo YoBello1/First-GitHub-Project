@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
 }
+
 nav {
   height: 70px;
   display: flex;
@@ -16,7 +17,7 @@ nav {
 }
 
 header {
-  background-color: white;
+  background-color: orange;
   height: calc(100vh - 70px);
   padding: 24px;
   display: flex;
@@ -25,27 +26,28 @@ header {
 }
 
 h1 {
-  font-size: 72px;
+  font-size: 55px;
 }
 
 .subheader {
-  font-size: 35px;
+  font-size: 25px;
   margin: 16px 0 24px 0;
 }
 
 button {
   background-color: aqua;
   color: white;
-  border: none;
   padding: 8px 16px;
   font-size: 25px;
   cursor: pointer;
 }
+
 a {
   color: black;
   font-size: 24px;
   font-weight: 600;
 }
+
 .logo {
   width: 300px;
 }
@@ -55,25 +57,31 @@ ul {
 }
 
 li {
-  list-style-type: none;
+  list-style-type: column;
   padding-left: 16px;
 }
 
 .row {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1150px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+#about #discord #contact {
+  padding: 48px;
+}
+
 /* 
 
- ABOUT 
+ABOUT 
 
- */
+*/
 
-.about {
-  padding: 48px 0;
+#about {
+  padding: 48px;
+  background-color: blueviolet;
 }
 
 h2 {
@@ -82,13 +90,13 @@ h2 {
   margin-bottom: 24px;
 }
 
-.section__description {
+.section_description {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.about_img--wrapper {
+.about__img--wrapper {
   width: 40%;
 }
 
@@ -100,8 +108,39 @@ img {
   width: 60%;
 }
 
+.about__img--wrapper,
+.section_description--wrapper {
+  padding: 0 24px;
+}
+
 .section_description--para {
   font-style: 20px;
   line-height: 1.5;
   margin-bottom: 24px;
+}
+
+/* 
+
+DISCORD 
+
+*/
+
+#discord {
+  background-color: aqua;
+}
+
+/* 
+
+CONTACT 
+
+*/
+
+#contact {
+  background-color: yellow;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
