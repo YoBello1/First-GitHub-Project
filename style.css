@@ -126,9 +126,11 @@ DISCORD
 */
 
 #discord {
+  padding: 48px;
   background-color: aqua;
 }
 
+.section_description--wrapper
 /* 
 
 CONTACT 
@@ -136,11 +138,13 @@ CONTACT
 */
 
 #contact {
-  background-color: yellow;
+  background-color: palevioletred;
 }
 
 form {
   width: 100%;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
