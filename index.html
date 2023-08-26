@@ -10,16 +10,16 @@
     <section>
       <nav>
         <img src="./Assets/FES.svg" class="logo" />
-        <ul>
-          <li><a href="about">About</a></li>
-          <li><a href="#discord">Discord</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div>
+          <a href="about">About</a>
+          <a href="#discord">Discord</a>
+          <a href="#contact">Contact</a>
+        </div>
       </nav>
       <header>
         <div class="row">
           <div>
-            <h1>Best place to learn Frontend</h1>
+            <h1>Best Place To Learn Frontend</h1>
             <p class="subheader">
               Like Yoane Belami, from an absolute beginner to a Legend
             </p>
@@ -51,53 +51,59 @@
             </p>
           </div>
           <figure class="about__img--wrapper">
-            <img src="./Assets/about.jpg" alt="about" />
+            <img src="./Assets/about.jpg" alt="about image" />
           </figure>
         </div>
       </section>
 
       <section id="discord">
         <h2>Discord</h2>
-        <div class="section_description">
-          <figure class="discord__img--wrapper">
-            <img src="./Assets/discord.png" alt="discord" />
-          </figure>
-          <div class="section_description--wrapper">
-            <p class="section_description--para">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-              nobis, saepe magnam unde porro blanditiismollitia hic aperiam at
-              ssumenda asperiores dolorem vitae eius nam minus aut pariatur qui
-              fuga.
-            </p>
-            <p class="section_description--para">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, aut
-              minima in quia accusantium suscipit placeat! Earum provident aut
-              autem iusto? Distinctio repellat, delectus at non odio ab quam
-              possimus.
-            </p>
+        <div class="row">
+          <div class="section_description">
+            <figure class="discord__img--wrapper">
+              <img src="./Assets/discord.png" alt="discord image" />
+            </figure>
+            <div class="section_description--wrapper">
+              <p class="section_description--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                nobis, saepe magnam unde porro blanditiismollitia hic aperiam at
+                ssumenda asperiores dolorem vitae eius nam minus aut pariatur
+                qui fuga.
+              </p>
+              <p class="section_description--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+                aut minima in quia accusantium suscipit placeat! Earum provident
+                aut autem iusto? Distinctio repellat, delectus at non odio ab
+                quam possimus.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="Contact">
+      <section id="contact">
         <h2>Contact</h2>
         <form action="">
           <span>Email</span>
-          <input type="text" placeholder="example@email.com" />
+          <input type="email" placeholder="Example@email.co.uk" />
           <span>Message</span>
-          <textarea type="text" placeholder="example@email.com"></textarea>
+          <textarea
+            type="text"
+            placeholder="Cool website/portfolio, let's connect!"
+          ></textarea>
           <buttonarea type="button" placeholder="Send Message"></buttonarea>
+          <button>Contact Me Now!</button>
         </form>
       </section>
     </main>
 
     <footer>
-      <img src="./Assets/FES.svg" />
-      <div>
-        <a href="about">About</a>
-        <a href="#discord">Discord</a>
-        <a href="#contact">Contact</a>
-        <a href="">Courses</a>
+      <img class="footer__logo" src="./Assets/FES.svg" alt="footer__logo" />
+      <div class="footer__link">
+        <a class="footer__link" href="about">About</a>
+        <a class="footer__link" href="#discord">Discord</a>
+        <a class="footer__link" href="#contact">Contact</a>
+        <a class="footer__link" href="">Courses</a>
       </div>
       <p>Made by Yoane Belami</p>
     </footer>
